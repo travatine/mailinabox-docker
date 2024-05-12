@@ -361,8 +361,9 @@ tools/editconf.py /etc/systemd/resolved.conf DNSStubListener=no
 
 # Restart the DNS services.
 
-restart_service bind9
-systemctl restart systemd-resolved
+# defer restart of bind9 during initial docker build
+#restart_service bind9
+#systemctl restart systemd-resolved
 
 # ### Fail2Ban Service
 
