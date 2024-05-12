@@ -357,7 +357,7 @@ fi
 # In docker /etc/resolve.conf is not a symlink & can not be deleted.
 #rm -f /etc/resolv.conf
 tools/editconf.py /etc/systemd/resolved.conf DNSStubListener=no
-echo "nameserver 127.0.0.1" > /etc/resolv.conf
+#echo "nameserver 127.0.0.1" > /etc/resolv.conf
 
 # Restart the DNS services.
 
