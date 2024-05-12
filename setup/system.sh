@@ -1,4 +1,6 @@
 #!/bin/bash
+# stop on errors / unset variables & show debug output
+set -eux; 
 source /etc/mailinabox.conf
 source setup/functions.sh # load our functions
 
