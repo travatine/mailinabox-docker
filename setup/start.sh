@@ -1,4 +1,6 @@
 #!/bin/bash
+# stop on errors / unset values and show debug trace
+set -eux; 
 # This is the entry point for configuring the system.
 #####################################################
 
